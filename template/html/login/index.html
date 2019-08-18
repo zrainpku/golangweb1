@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>登陆页面</title>
+        <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css" />
+        <script type="text/javascript" src="/js/jquery341.js" ></script>
+    </head>
+    <body>
+        <audio controls="controls" loop="loop" preload="auto" autoplay="autoplay">
+        <source src="/music/song.mp3" type="audio/mpeg" />
+             Your browser does not support the audio element.
+        </audio>
+
+
+        <div class="container">
+
+      <form class="form-signin" data-type="formAction" action="/ajax/login" form-rediret="/admin/index" >
+        <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="form-signin-heading">请登录</h2>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">  
+                <label for="inputEmail" class="sr-only"  >用户名</label>
+                <input type="test" name="admin_name"  class="form-control" placeholder="用户名" required autofocus>
+            </div>
+            <div class="form-group">  
+                <label for="inputPassword" class="sr-only"  >密 码</label>
+                <input type="password" name="admin_password"  class="form-control" placeholder="密 码" required>
+            </div> 
+        </div>  
+        <div class="modal-footer" >
+            <div class="form-group">  
+                <button class="btn btn-primary form-control"  type="submit">登陆</button>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-default form-control"  >注册</button>
+            </div>
+        </div>
+
+      </div>
+      </div>
+      </form>
+
+    </div> <!-- /container -->
+
+
+    </body>
+    <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js" ></script>
+    <script type="text/javascript" src="/js/base.js" ></script>
+</html>

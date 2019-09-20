@@ -15,8 +15,11 @@ func main() {
     http.Handle("/img/", http.FileServer(http.Dir("template")))
     
     http.HandleFunc("/admin/", adminHandler)
+    http.HandleFunc("/job/", jobHandler)
     http.HandleFunc("/login/",loginHandler)
+    http.HandleFunc("/regedit/",regeditHandler)
     http.HandleFunc("/ajax/",ajaxHandler)
+    http.HandleFunc("/ajax2/",ajax2Handler)
     http.HandleFunc("/",NotFoundHandler)
     http.ListenAndServe(":9090", nil)
 }

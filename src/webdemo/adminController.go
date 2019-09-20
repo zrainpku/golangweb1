@@ -10,7 +10,16 @@ type User struct {
     UserName string
 }
 
+
 type adminController struct {
+}
+
+func checkErr(err error){
+    if err != nil{
+            log.Println(err)
+            return
+        }
+
 }
 
 func (this *adminController)IndexAction(w http.ResponseWriter, r *http.Request, user string) {
@@ -18,5 +27,6 @@ func (this *adminController)IndexAction(w http.ResponseWriter, r *http.Request, 
     if (err != nil) {
         log.Println(err)
     }
+
     t.Execute(w, &User{user})
 }
